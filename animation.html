@@ -1,0 +1,205 @@
+  <html>
+  
+  <head>
+      
+      <style>
+      
+      body{
+          
+          background: #ccc url( https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAcW4DKiBwSpOtxvOri66OoACM8tznh_77Rg&usqp=CAU ) no-repeat;
+          background-size: cover;
+          background-position: Top-bot;
+          
+  
+          
+          
+      }
+      
+      
+      
+      
+      img{
+         background: none;
+         margin-left: 130px;
+         
+      }
+      
+      
+      
+      h1{
+          
+          
+          color: yellow;
+          font-family: courier;
+          font-optical-sizing: 400px;
+          text-shadow: 2px 2px green;
+}
+          
+          
+      }
+      
+      
+      
+      
+      /* We’ll set some colors and center everything. */
+
+body {
+  background: #4c268f;
+  color: #fc0345;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* We set the position to relative so that we can stack a blurred pseudo element on top of the original text */
+
+span {
+  position: relative;
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 900;
+  font-size: 64px;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  display: inline-block;
+}
+
+/* We create a pseudo element and blur it using the SVG filter. We’ll grab the content from the custom HTML attribute. */
+
+span:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: attr(filter-content);
+
+  filter: url(#motion-blur-filter);
+}
+
+/* We hide the SVG filter element from the DOM as it would take up some space */
+
+svg {
+  display: none;
+}
+      
+      
+      
+      
+      
+      
+      
+      
+      </style>
+  
+  
+  </head>
+  
+  
+  
+  <body>
+      <u>
+  <h1><center>SELECT YOUR ANIME</center></h1>
+  <br>
+  <br>
+  <br>
+  <h1><center>SINCHAN</center></h1>
+  <a href="https://szltbkzczsmugszspj13na-on.drv.tw/sinchan2.html">
+ <img border="none" class="IMAGE"
+
+    src="https://1.bp.blogspot.com/-4KBHjp-Ealc/YOFz3Zn2_aI/AAAAAAAAGac/9JLvcsKlvdsPjFGnAuI-iio7qLhMXtuZACLcBGAsYHQ/s320/PngItem_4904179.png" height="550px" width="70%" align="center">
+    
+    <br>
+    <br>  
+    <br>
+    
+    <hr>
+    
+  <br>
+  <br>
+  <h1><center>PERMAN</center></h1>
+  <a href="https://chalchitrmandirlink.blogspot.com/p/perman-all-hindi-episode.html?m=1">
+ <img border="none" class="IMAGE"
+
+    src="https://1.bp.blogspot.com/-6wyH3ieLUHk/YOF6naYDFJI/AAAAAAAAGa0/fwAzxTd-WFgKvDO_gPSglPqTs_4F7-CsQCLcBGAsYHQ/s320/PngItem_1746116.png" height="550px" width="70%" align="center">
+    
+    
+    
+        
+    <br>
+    <br>
+    <br>
+    
+    <hr>
+    
+  <br>
+  <br>
+  <h1><center>DRAGON BALL Z</center></h1>
+  <a href="https://chalchitrmandirlink.blogspot.com/p/dragon-ball-z.html?m=1">
+ <img border="none" class="IMAGE"
+
+    src="https://1.bp.blogspot.com/-lnYaQNgW-qE/YOF9mAHtsbI/AAAAAAAAGa8/LPosl34zyOwz7hVVbRE0igJQ8y3GBqvAgCLcBGAsYHQ/s320/favpng_goku-gohan-vegeta-super-saiya-dragon-ball.png" height="600px" width="70%" align="center">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </u>
+  
+  
+  
+  
+  <svg xmlns="http://www.w3.org/2000/svg">
+  
+  <!-- filterUnits is required to prevent clipping the blur outside the viewBox -->
+  
+    <filter id="motion-blur-filter" filterUnits="userSpaceOnUse">
+      
+      <!-- We only want horizontal blurring. x: 100, y: 0 -->
+      
+        <feGaussianBlur stdDeviation="100 0"></feGaussianBlur>
+    </filter>
+</svg>
+
+<!-- We use a custom attribute to set the text that the pseudo element should display and blur. In this case, we use the first character of the word. -->
+<br>
+<br>
+<br>
+<hr>
+<center><span filter-content="S">New Anime coming soon </span></center>
+
+<hr>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </body>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </html>
